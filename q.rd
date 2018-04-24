@@ -22,6 +22,12 @@
    <table id="main" onDisk="True" mixin="//scs#q3cindex">
     <index columns="ra,dec"/>
 
+    <column name="id" type="text"
+      ucd="meta.id;meta.main"
+      tablehead="ID" verbLevel="20"
+      description="Datapoint ID"
+      required="True"/>
+      
     <column name="ra" type="double precision"
       unit="deg" ucd="pos.eq.ra;meta.main"
       tablehead="R.A." verbLevel="1"
@@ -66,7 +72,7 @@
     <csvGrammar/>
     <make table="main">
       <rowmaker simplemaps="nufnu:flux,nufnu_error:flux_err"
-      		idmaps="ra,dec,frequency,upper_limit"/>
+      		idmaps="id,ra,dec,frequency,upper_limit"/>
     </make>
   </data>
 
