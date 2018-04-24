@@ -36,8 +36,8 @@
 
     <column name="frequency" type="real"
       unit="Hz" ucd="em.freq"
-      tablehead="Log nu_peak" verbLevel="1"
-      description="Synchrotron Peak Frequency"
+      tablehead="Frequency" verbLevel="1"
+      description="Flux measurement frequency"
       required="True"/>
 
     <column name="nufnu" type="real"
@@ -57,7 +57,7 @@
      tablehead="upper-limit" verbLevel="1"
      description="Flux upper limit"
      required="False">
-     <values nullLiteral="-"/>
+     <values nullLiteral=""/>
    </column>
   </table>
 
