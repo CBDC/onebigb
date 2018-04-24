@@ -1,4 +1,4 @@
-RA,Dec,frequency,flux,flux_err,UpperLimit
+ra,dec,frequency,flux,flux_err,upper_limit
 2.45708,-43.28056,2.420E+23,2.796E-13,1.097E-13,-
 2.45708,-43.28056,4.110E+23,3.185E-13,7.423E-14,-
 2.45708,-43.28056,7.250E+23,2.872E-13,6.252E-14,-

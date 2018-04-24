@@ -66,7 +66,7 @@
     <csvGrammar/>
     <make table="main">
       <rowmaker simplemaps="nufnu:flux,nufnu_error:flux_err"
-      		idmaps="ra,dec,upper_limit"/>
+      		idmaps="ra,dec,frequency,upper_limit"/>
     </make>
   </data>
 
@@ -83,8 +83,11 @@
       <FEED source="//scs#coreDescs"/>
     </dbCore>
 
-    <publish render="scs.xml" sets="local,ivo_managed"/>
+    <publish render="scs.xml" sets="ivo_managed"/>
+    <publish render="form" sets="local"/>
+
     <outputTable verbLevel="20"/>
   </service>
 
 </resource>
+
